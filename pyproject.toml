@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 100
+
+[tool.ruff]
+line-length = 100
+select = ["ALL"]
+ignore = [
+    "ANN002", "ANN003", "ANN101", "ANN102", "ANN204", # No annotations required for self, cls, *args and **kwargs
+    "FBT",
+    "D101", "D100", "D107", "D106", "D104", "D205", "D105", "D203", "D212", # Missing docstring for class, module, __init__, package
+    "BLE001", # catch blind exception
+    "RET503", "RET504",# avoid adding uncontrolled return None
+    "G004", # security warnings with f-strings with logs
+    "S108",
+    "TRY300", "COM812",
+]
