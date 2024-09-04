@@ -1,5 +1,6 @@
-from sikopress.SThemes import STheme
 from PySide6.QtWidgets import QPushButton
+
+from sikopress.SThemes import STheme
 
 
 class SPushButton(QPushButton):
@@ -7,4 +8,3 @@ class SPushButton(QPushButton):
         super().__init__(*args, **kwargs)
         self.theme = theme
         self.setStyleSheet(self.theme.push_button.style_sheet)
-

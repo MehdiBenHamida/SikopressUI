@@ -1,2 +1,2 @@
-from sikopress.SWidgets import SGallery # noqa
-from sikopress.SThemes import SWhiteShadesTheme # noqa
+from sikopress.SThemes import SWhiteShadesTheme
+from sikopress.SWidgets import SGallery
